@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { CiBitcoin } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-const Shop = () => {
+const Heroshop = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -28,7 +28,7 @@ const Shop = () => {
   return (
     
     <div className="">
-      <div className="flex gap-4 mb-6 justify-center">
+ <div className="flex gap-4 mb-6 justify-center">
   <Link
     to="/Shop"
     className="px-6 py-2 rounded-xl border border-orange-500 text-orange-500 font-semibold
@@ -87,4 +87,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Heroshop;

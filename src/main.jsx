@@ -9,6 +9,7 @@ import Shop from "./Pages/Shop.jsx";
 import Code from "./Pages/Code.jsx";
 import Blog from "./Pages/Blog.jsx";
 import Profile from "./Pages/Profile.jsx";
+import Heroshop from "./Pages/Heroshop.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/Profile",
         element: <Profile />,
+      },
+      {
+        path: "/Heroshop",
+        element: <Heroshop/>,
       },
     ],
   },
