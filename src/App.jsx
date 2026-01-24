@@ -9,14 +9,14 @@ const App = () => {
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          {/* Navbar */}
+         
           <nav className="navbar w-full bg-base-300">
             <label
               htmlFor="my-drawer-4"
               aria-label="open sidebar"
               className="btn btn-square btn-ghost"
             >
-              {/* Sidebar toggle icon */}
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -34,7 +34,7 @@ const App = () => {
             </label>
             <div className="px-4"></div>
           </nav>
-          {/* Page content here */}
+         
           <div className="p-4">
             <Outlet />
           </div>
@@ -47,16 +47,16 @@ const App = () => {
             className="drawer-overlay"
           ></label>
           <div className="flex min-h-full flex-col items-start bg-base-200 is-drawer-close:w-14 is-drawer-open:w-64">
-            {/* Sidebar content here */}
+      
             <ul className="menu w-full grow">
-              {/* List item */}
+            
               <Link to={"/"}>
                 <li>
                   <button
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Homepage"
                   >
-                    {/* Home icon */}
+                   
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -75,14 +75,14 @@ const App = () => {
                   </button>
                 </li>
               </Link>
-              {/* List item */}
+              
               <Link to={"/Course"}>
                 <li>
                   <button
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                    {/* Settings icon */}
+                   
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -108,7 +108,7 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                    {/* Settings icon */}
+                  
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -134,7 +134,7 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                    {/* Settings icon */}
+                 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -160,7 +160,7 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                    {/* Settings icon */}
+                  
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -186,7 +186,7 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                    {/* Settings icon */}
+                 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -212,7 +212,7 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                    {/* Settings icon */}
+                    
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"

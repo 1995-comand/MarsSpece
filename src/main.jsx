@@ -20,9 +20,9 @@ const router = createBrowserRouter([
         path: "/Course",
         element: <Course />,
       },
-            {
+      {
         path: "/",
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "/Aduverse",
