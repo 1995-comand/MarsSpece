@@ -37,7 +37,7 @@ const App = () => {
 
               <div>
                 <p className="border-[1px] rounded border-[#adadad] w-fit px-2">
-                  {coin}
+                  {coin}🪙
                 </p>
               </div>
             </div>
