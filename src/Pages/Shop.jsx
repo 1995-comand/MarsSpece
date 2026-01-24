@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { CiBitcoin } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { SlEarphones } from "react-icons/sl";
+import { FaTshirt } from "react-icons/fa";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -27,34 +29,36 @@ const Shop = () => {
 
   return (
     
-    <div className="">
-      <div className="flex gap-4 mb-6 justify-center">
+    <div className="bg-gray-200">
+      <div className=" flex gap-4 mb-6 justify-center">
   <Link
-    to="/Shop"
-    className="px-6 py-2 rounded-xl border border-orange-500 text-orange-500 font-semibold
-               hover:bg-orange-500 hover:text-white
-               transition-all duration-300 ease-in-out
-               shadow-sm hover:shadow-lg"
-  >
-    Shop
-  </Link>
-
-  <Link
-    to="/Heroshop"
-    className="px-6 py-2 rounded-xl border border-orange-500 text-orange-500 font-semibold
-               hover:bg-orange-500 hover:text-white
-               transition-all duration-300 ease-in-out
-               shadow-sm hover:shadow-lg"
-  >
-    Hero Shop
-  </Link>
+     to="/Shop"
+     className="bg-white flex items-center gap-[10px] px-6 py-2 rounded-xl border border-orange-500 text-orange-500 font-semibold
+                hover:bg-orange-500 hover:text-white
+                transition-all duration-300 ease-in-out
+                shadow-sm hover:shadow-lg"
+   >
+     <FaTshirt />
+     Shop
+   </Link>
+ 
+   <Link
+     to="/Heroshop"
+     className="bg-white flex items-center gap-[10px] px-6 py-2 rounded-xl border border-orange-500 text-orange-500 font-semibold
+                hover:bg-orange-500 hover:text-white
+                transition-all duration-300 ease-in-out
+                shadow-sm hover:shadow-lg"
+   >
+     <SlEarphones />
+     Hero Shop
+   </Link>
 </div>
 
       <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((item) => (
         <div
           key={item.id}
-          className="border rounded-xl p-4 shadow hover:shadow-lg transition"
+          className="bg-white rounded-xl p-4 shadow hover:shadow-lg transition"
         >
           <img
             src={item.thumbnail}
