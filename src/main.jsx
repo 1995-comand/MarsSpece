@@ -9,6 +9,8 @@ import Shop from "./Pages/Shop.jsx";
 import Code from "./Pages/Code.jsx";
 import Blog from "./Pages/Blog.jsx";
 import Profile from "./Pages/Profile.jsx";
+import CourseDetail from "./Pages/CourseDetail.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
         path: "/Profile",
         element: <Profile />,
       },
+      {
+        path: "/Course/:id",
+        element: <CourseDetail />,
+      }
     ],
   },
 ]);
