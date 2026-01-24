@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { AppContext } from "./Context/AppContext";
 import logo from "./assets/mars logo.webp";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   const [coin, SetCoin] = useState(0);
@@ -35,16 +36,29 @@ const App = () => {
             <div className="px-4 flex items-center justify-between mx-auto w-[70%]">
               <img className="w-[160px]" src={logo} alt="" />
 
-              <div>
-                <p className="border-[1px] rounded border-[#adadad] w-fit px-2">
-                  {coin}🪙
+              <div className="flex items-center gap-6">
+                <p className="border-[1px] rounded border-[#adadad] w-fit px-2 py-1">
+                  🔥{coin}
                 </p>
+
+                <p className="border-[1px] rounded border-[#adadad] w-fit px-2 py-1">
+                  🪙{coin}
+                </p>
+
+                <p className="border-[1px] rounded border-[#adadad] w-fit px-2 py-1">
+                  ⚡{coin}
+                </p>
+
+                <button className="bg-gradient-to-r from-[#ce42ff] via-[#27b0fc ] to-[#3bf1da] text-white px-4 py-2 rounded font-bold text-[18px] hover-3d">
+                  Подписаться
+                </button>
               </div>
             </div>
           </nav>
 
           <div className="p-4">
             <Outlet />
+            <ToastContainer />
           </div>
         </div>
 
