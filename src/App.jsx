@@ -1,27 +1,26 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { AppContext } from "./Context/AppContext";
+import logo from "./assets/mars logo.webp";
 
 const App = () => {
-  const [coin, SetCoin] = useState();
+  const [coin, SetCoin] = useState(0);
 
   return (
     <AppContext.Provider value={{ coin, SetCoin }}>
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-         
           <nav className="navbar w-full bg-base-300">
             <label
               htmlFor="my-drawer-4"
               aria-label="open sidebar"
               className="btn btn-square btn-ghost"
             >
-              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                strokeLinejoin="round"
+                strokeLinejoin="rond"
                 strokeLinecap="round"
                 strokeWidth="2"
                 fill="none"
@@ -33,9 +32,17 @@ const App = () => {
                 <path d="M14 10l2 2l-2 2"></path>
               </svg>
             </label>
-            <div className="px-4"></div>
+            <div className="px-4 flex items-center justify-between mx-auto w-[70%]">
+              <img className="w-[160px]" src={logo} alt="" />
+
+              <div>
+                <p className="border-[1px] rounded border-[#adadad] w-fit px-2">
+                  {coin}
+                </p>
+              </div>
+            </div>
           </nav>
-         
+
           <div className="p-4">
             <Outlet />
           </div>
@@ -48,16 +55,13 @@ const App = () => {
             className="drawer-overlay"
           ></label>
           <div className="flex min-h-full flex-col items-start bg-base-200 is-drawer-close:w-14 is-drawer-open:w-64">
-      
             <ul className="menu w-full grow">
-            
               <Link to={"/"}>
                 <li>
                   <button
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Homepage"
                   >
-                   
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -76,14 +80,13 @@ const App = () => {
                   </button>
                 </li>
               </Link>
-              
+
               <Link to={"/Course"}>
                 <li>
                   <button
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                   
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -109,7 +112,6 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                  
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -135,7 +137,6 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -161,7 +162,6 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                  
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -187,7 +187,6 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -213,7 +212,6 @@ const App = () => {
                     className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
                     data-tip="Settings"
                   >
-                    
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"

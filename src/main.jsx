@@ -10,6 +10,7 @@ import Code from "./Pages/Code.jsx";
 import Blog from "./Pages/Blog.jsx";
 import Profile from "./Pages/Profile.jsx";
 import Home from "./Pages/Home.jsx";
+import CourseDetail from "./Pages/CourseDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/Profile",
         element: <Profile />,
+      },
+      {
+        path: "/Course/:id",
+        element: <CourseDetail />,
       },
     ],
   },
