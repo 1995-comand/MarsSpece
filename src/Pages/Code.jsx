@@ -51,7 +51,7 @@ const Code = () => {
               <p className="text-sm text-gray-500">11 задач | 0% выполнено</p>
             </div>
           </div>
-
+  
           <button className="text-blue-600 text-sm font-medium hover:underline mt-8">
              <a href="https://www.google.com/?hl=ru"> Войти →</a>
           </button>
