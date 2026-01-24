@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { AppContext } from "./Context/AppContext";
+
 const App = () => {
   const [coin, SetCoin] = useState();
 
