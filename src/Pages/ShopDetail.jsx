@@ -64,10 +64,20 @@ const ShopDetail = () => {
           />
         </div>
 
-        {/* Title */}
-        <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">
-          {product.title}
-        </h2>
+                {/* Password Input */}
+                <div className="w-full relative mb-6">
+                    <input
+                        type={showPassword ? "text" : "password"}
+                        placeholder="Nomer kiriting"
+                        className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-blue-500 text-gray-600"
+                    />
+                    <button
+                        className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"
+                        onClick={() => setShowPassword(!showPassword)}
+                    >
+                        {showPassword ? <FaEyeSlash /> : <FaEye />}
+                    </button>
+                </div>
 
         {/* Price */}
         <div className="flex items-center gap-2 mb-8">
