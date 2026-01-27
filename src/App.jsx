@@ -112,6 +112,7 @@ const App = () => {
                     data-tip="Shop"
                   >
                    <FaShop />
+                   
                     <span className="is-drawer-close:hidden">Shop</span>
                   </button>
                 </li>
