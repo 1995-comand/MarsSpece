@@ -3,7 +3,7 @@ import logo from "../assets/mars logo.webp";
 import { AppContext } from "../Context/AppContext";
 
 const Header = () => {
-   const {coin, SetCoin} = useContext(AppContext);
+  const { coin, SetCoin } = useContext(AppContext);
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm">
@@ -37,7 +37,10 @@ const Header = () => {
               className="btn btn-ghost btn-circle avatar"
             >
               <div className="w-10 rounded-full">
-                <img alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                />
               </div>
             </div>
             <ul
