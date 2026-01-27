@@ -77,7 +77,7 @@ const ShopDetail = () => {
                     <span className="text-xl font-bold text-gray-800">{product.price}</span>
                 </div>
 
-                {/* Password Input */}
+                {/* Password Input */} 
                 <div className="w-full relative mb-6">
                     <input
                         type={showPassword ? "text" : "password"}
