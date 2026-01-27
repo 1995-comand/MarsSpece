@@ -12,6 +12,7 @@ import Profile from "./Pages/Profile.jsx";
 import Home from "./Pages/Home.jsx";
 import CourseDetail from "./Pages/CourseDetail.jsx";
 import Heroshop from "./Pages/Heroshop.jsx";
+import ShopDetail from "./Pages/ShopDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
         element: <Shop />,
       },
       {
+        path: "/Shop/:id",
+        element: <ShopDetail />,
+      },
+      {
         path: "/Code",
         element: <Code />,
       },
@@ -49,8 +54,14 @@ const router = createBrowserRouter([
       {
         path: "/Course/:id",
         element: <CourseDetail />,
+      },
+      {
         path: "/Heroshop",
         element: <Heroshop />,
+      },
+      {
+        path: "/Heroshop/:id",
+        element: <ShopDetail />,
       },
     ],
   },
