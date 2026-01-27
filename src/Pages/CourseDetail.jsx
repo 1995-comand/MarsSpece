@@ -12,17 +12,17 @@ function CourseDetail() {
   const { id } = useParams(); 
 
   return (
-    <div className="p-6">
+    <div className="p-6 w-250">
      
-      <div className="bg-white rounded-2xl p-5 shadow-sm mb-6">
-        <h2 className="text-lg font-semibold">
+      <div className="bg-[#00CC81] rounded-2xl p-5 shadow-sm mb-6 flex ">
+        <h2 className="text-lg font-semibold text-white " >
           MODUL 1 · BLOK 1
         </h2>
-        <p className="text-sm text-gray-400 mt-1">
+        <p className="text-sm text-gray-400 mt-1 text-white ml-41">
           Kurs: <span className="capitalize">{id}</span>
         </p>
 
-        <div className="mt-3 text-sm">
+        <div className="mt-3 text-sm ml-120 text-white">
           O'rtacha ball: <span className="font-semibold">0 BALL</span>
         </div>
       </div>
