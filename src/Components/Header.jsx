@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import logo from "../assets/mars logo.webp";
 import { AppContext } from "../Context/AppContext";
+import ThemeToggle from "./ThemeSwitcher";
 
 const Header = () => {
   const { coin, SetCoin } = useContext(AppContext);
@@ -24,7 +25,9 @@ const Header = () => {
               <p className="border-[1px] rounded border-[#adadad] w-fit px-2 py-1">
                 ⚡{coin}
               </p>
-
+              <div>
+                <ThemeToggle />
+              </div>
               <button className="bg-gradient-to-r from-[#ce42ff] via-[#27b0fc ] to-[#3bf1da] text-white px-4 py-2 rounded font-bold text-[18px] hover-3d">
                 Подписаться
               </button>
@@ -48,10 +51,7 @@ const Header = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
+                <a className="justify-between">Profile</a>
               </li>
               <li>
                 <a>Settings</a>

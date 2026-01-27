@@ -13,8 +13,6 @@ const App = () => {
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-     
-
           <div className="p-4">
             <Header />
             <Outlet />
