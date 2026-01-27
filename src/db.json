@@ -170,5 +170,95 @@
       "specialAbility": "Meteor Shower",
       "isOnline": true
     }
+  ],
+  "Curses": [
+    {
+      "id": 1,
+      "title": "Курс Александра Ламкова - HTML",
+      "category": "HTML",
+      "rating": 4.5,
+      "students": 580,
+      "videosCount": 18,
+      "coverImage": "/images/html-bg.png",
+      "icons": {
+        "main": "/images/html5.svg",
+        "decor": [
+          "/images/cube.svg",
+          "/images/settings.svg",
+          "/images/globe.svg"
+        ],
+        "badge": "/images/crown.svg"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Полный курс CSS с нуля",
+      "category": "CSS",
+      "rating": 4.7,
+      "students": 720,
+      "videosCount": 24,
+      "coverImage": "/images/css-bg.png",
+      "icons": {
+        "main": "/images/css3.svg",
+        "decor": ["/images/brush.svg", "/images/settings.svg"],
+        "badge": "/images/fire.svg"
+      }
+    },
+    {
+      "id": 3,
+      "title": "JavaScript для начинающих",
+      "category": "JavaScript",
+      "rating": 4.8,
+      "students": 910,
+      "videosCount": 32,
+      "coverImage": "/images/js-bg.png",
+      "icons": {
+        "main": "/images/javascript.svg",
+        "decor": ["/images/lightning.svg", "/images/cube.svg"],
+        "badge": "/images/star.svg"
+      }
+    },
+    {
+      "id": 4,
+      "title": "React с нуля до PRO",
+      "category": "React",
+      "rating": 4.9,
+      "students": 840,
+      "videosCount": 40,
+      "coverImage": "/images/react-bg.png",
+      "icons": {
+        "main": "/images/react.svg",
+        "decor": ["/images/atom.svg", "/images/settings.svg"],
+        "badge": "/images/top.svg"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Node.js и Backend основы",
+      "category": "Backend",
+      "rating": 4.6,
+      "students": 610,
+      "videosCount": 26,
+      "coverImage": "/images/node-bg.png",
+      "icons": {
+        "main": "/images/nodejs.svg",
+        "decor": ["/images/server.svg", "/images/database.svg"],
+        "badge": "/images/crown.svg"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Git & GitHub для разработчиков",
+      "category": "Tools",
+      "rating": 4.4,
+      "students": 450,
+      "videosCount": 14,
+      "coverImage": "/images/git-bg.png",
+      "icons": {
+        "main": "/images/git.svg",
+        "decor": ["/images/branch.svg", "/images/commit.svg"],
+        "badge": "/images/check.svg"
+      }
+    }
   ]
 }
