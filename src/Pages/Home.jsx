@@ -19,8 +19,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4 space-y-4">
-      <div className="bg-white rounded-2xl p-4 shadow">
+    <div className="min-h-screen  p-4 space-y-4">
+      <div className="  rounded-2xl p-4 shadow">
         <div className="h-48 rounded-xl bg-gradient-to-r from-sky-400 to-blue-500 flex items-center justify-center text-white text-2xl font-bold"></div>
       </div>
 
