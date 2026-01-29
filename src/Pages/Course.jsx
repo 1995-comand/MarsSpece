@@ -44,14 +44,12 @@ function Course() {
             key={course.id}
             className="bg-white rounded-2xl p-5 flex gap-4 items-center shadow-sm hover:shadow-md transition"
           >
-         
             <div
               className={`w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold ${course.color}`}
             >
               <img src="https://lab.marsit.uz/media/group_category_images/44/beginner_icon.png" alt="" />
             </div>
 
-    
             <div className="flex-1">
               <h3 className="text-sm font-semibold">{course.title}</h3>
               <p className="text-xs text-gray-400 mt-1">{course.code}</p>
