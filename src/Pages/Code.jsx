@@ -11,11 +11,11 @@ const Code = () => {
           alt=""
         />
 
-        <div className="min-h-screen bg-gray-50 p-6 mr-50">
+        <div className="min-h-screen p-6 mr-50">
           <div className="mx-auto max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="relative flex items-center justify-between rounded-xl bg-white p-5 shadow-sm border border-gray-100">
+            <div className="relative flex items-center justify-between rounded-xl p-5 shadow-sm border">
               <div className="absolute top-4 right-4">
-                <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-yellow-100 text-yellow-500 text-sm">
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded-md text-yellow-500 text-sm">
                   👑
                 </span>
               </div>
@@ -27,10 +27,10 @@ const Code = () => {
                   alt=""
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold">
                     Amazon
                   </h3>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm ">
                     10 задач | 0% выполнено
                   </p>
                   <button className="text-blue-600 text-sm font-medium hover:underline  flex justify-start">
@@ -40,9 +40,9 @@ const Code = () => {
               </div>
             </div>
 
-            <div className="relative flex items-center justify-between rounded-xl bg-white p-5 shadow-sm border border-gray-100">
+            <div className="relative flex items-center justify-between rounded-xl p-5 shadow-sm border ">
               <div className="absolute top-4 right-4">
-                <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-yellow-100 text-yellow-500 text-sm">
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded-md  text-yellow-500 text-sm">
                   👑
                 </span>
               </div>
@@ -54,10 +54,10 @@ const Code = () => {
                   alt=""
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold ">
                     Google
                   </h3>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm ">
                     11 задач | 0% выполнено
                   </p>
                   <button className="text-blue-600 text-sm font-medium hover:underline">
@@ -67,9 +67,9 @@ const Code = () => {
               </div>
             </div>
 
-            <div className="relative flex items-center justify-between rounded-xl bg-white p-5 shadow-sm border border-gray-100">
+            <div className="relative flex items-center justify-between rounded-xl  p-5 shadow-sm border ">
               <div className="absolute top-4 right-4">
-                <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-yellow-100 text-yellow-500 text-sm">
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded-md  text-yellow-500 text-sm">
                   👑
                 </span>
               </div>
@@ -81,10 +81,10 @@ const Code = () => {
                   alt=""
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold ">
                     Netflix
                   </h3>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm ">
                     10 задач | 0% выполнено
                   </p>
                   <button className="text-blue-600 text-sm font-medium hover:underline">
@@ -94,9 +94,9 @@ const Code = () => {
               </div>
             </div>
 
-            <div className="relative flex items-center justify-between rounded-xl bg-white p-5 shadow-sm border border-gray-100">
+            <div className="relative flex items-center justify-between rounded-xlbg-white p-5 shadow-sm border ">
               <div className="absolute top-4 right-4">
-                <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-yellow-100 text-yellow-500 text-sm">
+                <span className="inline-flex h-6 w-6 items-center justify-center rounded-md  text-yellow-500 text-sm">
                   👑
                 </span>
               </div>
@@ -108,15 +108,15 @@ const Code = () => {
                   alt=""
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold ">
                     Facebook
                   </h3>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm ">
                     12 задач | 0% выполнено
                   </p>
                   <button className="text-blue-600 text-sm font-medium hover:underline">
                     <a href="https://www.facebook.com/?locale=ru_RU">
-                      {" "}
+                     
                       Войти →
                     </a>
                   </button>
