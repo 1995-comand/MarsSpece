@@ -13,6 +13,8 @@ import Home from "./Pages/Home.jsx";
 import CourseDetail from "./Pages/CourseDetail.jsx";
 import Heroshop from "./Pages/Heroshop.jsx";
 import ShopDetail from "./Pages/ShopDetail.jsx";
+import Login from "./Pages/Login.jsx";
+import Dashboard from "./Pages/Dashboard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,54 +22,73 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/Course",
-        element: <Course />,
-      },
-      {
         path: "/",
-        element: <Home />,
+        element: <Login />,
       },
       {
-        path: "/Aduverse",
-        element: <Aduvarse />,
+        path: "/login",
+        element: <Login />,
       },
       {
-        path: "/Shop",
-        element: <Shop />,
-      },
-      {
-        path: "/Shop/:id",
-        element: <ShopDetail />,
-      },
-      {
-        path: "/Code",
-        element: <Code />,
-      },
-      {
-        path: "/Blog",
-        element: <Blog />,
-      },
-      {
-        path: "/Profile",
-        element: <Profile />,
-      },
-      {
-        path: "/Course/:id",
-        element: <CourseDetail />,
-      },
-      {
-        path: "/Heroshop",
-        element: <Heroshop />,
-      },
-      {
-        path: "/Heroshop/:id",
-        element: <ShopDetail />,
+        path: "/dashboard",
+        element: <Dashboard />,
+        children: [
+          {
+            index: true,
+            element: <Home />,
+          },
+          {
+            path: "home",
+            element: <Home />,
+          },
+          {
+            path: "course",
+            element: <Course />,
+          },
+          {
+            path: "course/:id",
+            element: <CourseDetail />,
+          },
+          {
+            path: "aduverse",
+            element: <Aduvarse />,
+          },
+          {
+            path: "shop",
+            element: <Shop />,
+          },
+          {
+            path: "shop/:id",
+            element: <ShopDetail />,
+          },
+          {
+            path: "heroshop",
+            element: <Heroshop />,
+          },
+          {
+            path: "heroshop/:id",
+            element: <ShopDetail />,
+          },
+          {
+            path: "code",
+            element: <Code />,
+          },
+          {
+            path: "blog",
+            element: <Blog />,
+          },
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+        ],
       },
     ],
   },
 ]);
+
 createRoot(document.getElementById("root")).render(
-  <>
+  <StrictMode>
     <RouterProvider router={router} />
-  </>,
+  </StrictMode>,
 );

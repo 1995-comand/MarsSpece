@@ -28,7 +28,7 @@ const Heroshop = () => {
     <div className="bg-gray-200">
       <div className=" flex gap-4 mb-6 justify-center">
         <Link
-          to="/Shop"
+          to="/dashboard/Shop"
           className="bg-white flex items-center gap-[10px] px-6 py-2 rounded-xl border border-orange-500 text-orange-500 font-semibold
                    hover:bg-orange-500 hover:text-white
                    transition-all duration-300 ease-in-out
@@ -39,7 +39,7 @@ const Heroshop = () => {
         </Link>
 
         <Link
-          to="/Heroshop"
+          to="/dashboard/Heroshop"
           className="bg-white flex items-center gap-[10px] px-6 py-2 rounded-xl border border-orange-500 text-orange-500 font-semibold
                    hover:bg-orange-500 hover:text-white
                    transition-all duration-300 ease-in-out
@@ -53,7 +53,7 @@ const Heroshop = () => {
       <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((item) => (
           <Link
-            to={`/Heroshop/${item.id}`}
+            to={`/dashboard/Heroshop/${item.id}`}
             key={item.id}
             className="bg-white rounded-xl p-4 shadow hover:shadow-lg transition block flex flex-col justify-between"
           >

@@ -111,9 +111,7 @@ const Code = () => {
                   <h3 className="text-lg font-semibold text-gray-900">
                     Facebook
                   </h3>
-                  <p className="text-sm text-gray-500">
-                    12 задач | 0% выполнено
-                  </p>
+                  <p className="text-sm">12 задач | 0% выполнено</p>
                   <button className="text-blue-600 text-sm font-medium hover:underline">
                     <a href="https://www.facebook.com/?locale=ru_RU">
                       {" "}

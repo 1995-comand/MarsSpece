@@ -9,20 +9,17 @@ const lessons = [
 ];
 
 function CourseDetail() {
-  const { id } = useParams(); 
+  const { id } = useParams();
 
   return (
-    <div className="p-6">
-     
-      <div className="bg-white rounded-2xl p-5 shadow-sm mb-6">
-        <h2 className="text-lg font-semibold">
-          MODUL 1 · BLOK 1
-        </h2>
-        <p className="text-sm text-gray-400 mt-1">
+    <div className="p-6 w-250">
+      <div className="bg-[#00CC81] rounded-2xl p-5 shadow-sm mb-6 flex ">
+        <h2 className="text-lg font-semibold">MODUL 1 · BLOK 1</h2>
+        <p className="text-sm text-gray-400 mt-1 ml-41">
           Kurs: <span className="capitalize">{id}</span>
         </p>
 
-        <div className="mt-3 text-sm">
+        <div className="mt-3 text-sm ml-120">
           O'rtacha ball: <span className="font-semibold">0 BALL</span>
         </div>
       </div>
@@ -31,15 +28,13 @@ function CourseDetail() {
         {lessons.map((lesson) => (
           <div
             key={lesson.id}
-            className="bg-white rounded-xl px-4 py-3 flex items-center justify-between shadow-sm hover:shadow-md transition"
+            className="te rounded-xl px-4 py-3 flex items-center justify-between shadow-sm hover:shadow-md transition"
           >
             <div>
               <p className="text-sm font-medium">
                 {lesson.id}. {lesson.title}
               </p>
-              <span className="text-xs text-gray-400">
-                ⏱ {lesson.time}
-              </span>
+              <span className="text-xs text-gray-400">⏱ {lesson.time}</span>
             </div>
 
             <button className="bg-indigo-600 text-white text-xs px-4 py-2 rounded-lg hover:bg-indigo-700 transition">

@@ -32,14 +32,16 @@ const Shop = () => {
     <div className="bg-gray-200">
       <div className="flex gap-4 mb-6 justify-center">
         <Link
-          to={"/Shop"}
-          className="bg-white flex items-center gap-2 px-6 py-2 rounded-xl border border-orange-500 text-orange-500">
+          to={"/dashboard/Shop"}
+          className="bg-white flex items-center gap-2 px-6 py-2 rounded-xl border border-orange-500 text-orange-500"
+        >
           <FaTshirt /> Shop
         </Link>
 
         <Link
-          to={"/Heroshop"}
-          className="bg-white flex items-center gap-2 px-6 py-2 rounded-xl border border-orange-500 text-orange-500">
+          to={"/dashboard/Heroshop"}
+          className="bg-white flex items-center gap-2 px-6 py-2 rounded-xl border border-orange-500 text-orange-500"
+        >
           <SlEarphones /> Hero Shop
         </Link>
       </div>
@@ -47,7 +49,7 @@ const Shop = () => {
       <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((item) => (
           <Link
-            to={`/Shop/${item.id}`}
+            to={`/dashboard/Shop/${item.id}`}
             key={item.id}
             className="bg-white rounded-xl p-4 shadow hover:shadow-lg transition block flex flex-col justify-between"
           >
@@ -67,7 +69,9 @@ const Shop = () => {
 
             <div className="mt-2">
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                <span className="text-black font-semibold text-lg">{item.price}</span>
+                <span className="text-black font-semibold text-lg">
+                  {item.price}
+                </span>
                 <CiBitcoin className="text-yellow-400 w-5 h-5" />
                 <span className="text-gray-300">|</span>
                 <span>{item.stock} ta qoldi</span>

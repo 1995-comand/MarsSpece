@@ -111,7 +111,7 @@ const ShopDetail = () => {
 
         {/* Ask Martian Link */}
         <Link
-          to="/contact"
+          to="/dashboard/contact"
           className="flex items-center gap-2 text-[#4f46e5] font-medium hover:underline"
         >
           <BsStars className="text-[#818cf8]" />

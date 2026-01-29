@@ -36,18 +36,21 @@ const courses = [
 function Course() {
   return (
     <div className="p-6">
-      <h2 className="text-xl font-semibold mb-5">Davom eting...</h2>
+      <h2 className="text-xl font-semibold mb-5">Davom eting</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {courses.map((course) => (
           <div
             key={course.id}
-            className="bg-white rounded-2xl p-5 flex gap-4 items-center shadow-sm hover:shadow-md transition"
+            className=" rounded-2xl p-5 flex gap-4 items-center shadow-sm hover:shadow-md transition"
           >
             <div
               className={`w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold ${course.color}`}
             >
-              ⚛️
+              <img
+                src="https://lab.marsit.uz/media/group_category_images/44/beginner_icon.png"
+                alt=""
+              />
             </div>
 
             <div className="flex-1">
