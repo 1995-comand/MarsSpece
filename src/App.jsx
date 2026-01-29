@@ -4,6 +4,12 @@ import { AppContext } from "./Context/AppContext";
 import logo from "./assets/mars logo.webp";
 import { ToastContainer } from "react-toastify";
 import Header from "./Components/Header";
+import { FaBook } from "react-icons/fa";
+import { BsFillCameraVideoFill } from "react-icons/bs";
+import { FaPython } from "react-icons/fa";
+import { LuNewspaper } from "react-icons/lu";
+import { FaShop } from "react-icons/fa6";
+
 
 const App = () => {
   const [coin, SetCoin] = useState(0);
@@ -56,24 +62,10 @@ const App = () => {
               <Link to={"/Course"}>
                 <li>
                   <button
-                    className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                    data-tip="Settings"
+                    className="h-[50px] is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                    data-tip="Course"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      strokeLinejoin="round"
-                      strokeLinecap="round"
-                      strokeWidth="2"
-                      fill="none"
-                      stroke="currentColor"
-                      className="my-1.5 inline-block size-4"
-                    >
-                      <path d="M20 7h-9"></path>
-                      <path d="M14 17H5"></path>
-                      <circle cx="17" cy="17" r="3"></circle>
-                      <circle cx="7" cy="7" r="3"></circle>
-                    </svg>
+                    <FaBook/>
                     <span className="is-drawer-close:hidden">Course</span>
                   </button>
                 </li>
@@ -81,24 +73,10 @@ const App = () => {
               <Link to={"/Aduverse"}>
                 <li>
                   <button
-                    className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                    data-tip="Settings"
+                    className=" h-[50px] is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                    data-tip="Aduvarse"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      strokeLinejoin="round"
-                      strokeLinecap="round"
-                      strokeWidth="2"
-                      fill="none"
-                      stroke="currentColor"
-                      className="my-1.5 inline-block size-4"
-                    >
-                      <path d="M20 7h-9"></path>
-                      <path d="M14 17H5"></path>
-                      <circle cx="17" cy="17" r="3"></circle>
-                      <circle cx="7" cy="7" r="3"></circle>
-                    </svg>
+                   <BsFillCameraVideoFill />
                     <span className="is-drawer-close:hidden">Aduverse</span>
                   </button>
                 </li>
@@ -106,24 +84,10 @@ const App = () => {
               <Link to={"/Code"}>
                 <li>
                   <button
-                    className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                    data-tip="Settings"
+                    className="h-[50px] is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                    data-tip="Mars code"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      strokeLinejoin="round"
-                      strokeLinecap="round"
-                      strokeWidth="2"
-                      fill="none"
-                      stroke="currentColor"
-                      className="my-1.5 inline-block size-4"
-                    >
-                      <path d="M20 7h-9"></path>
-                      <path d="M14 17H5"></path>
-                      <circle cx="17" cy="17" r="3"></circle>
-                      <circle cx="7" cy="7" r="3"></circle>
-                    </svg>
+                    <FaPython />
                     <span className="is-drawer-close:hidden">Code</span>
                   </button>
                 </li>
@@ -131,24 +95,10 @@ const App = () => {
               <Link to={"/Blog"}>
                 <li>
                   <button
-                    className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                    data-tip="Settings"
+                    className="h-[50px] is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                    data-tip="Blog"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      strokeLinejoin="round"
-                      strokeLinecap="round"
-                      strokeWidth="2"
-                      fill="none"
-                      stroke="currentColor"
-                      className="my-1.5 inline-block size-4"
-                    >
-                      <path d="M20 7h-9"></path>
-                      <path d="M14 17H5"></path>
-                      <circle cx="17" cy="17" r="3"></circle>
-                      <circle cx="7" cy="7" r="3"></circle>
-                    </svg>
+                    <LuNewspaper />
                     <span className="is-drawer-close:hidden">Blog</span>
                   </button>
                 </li>
@@ -156,53 +106,16 @@ const App = () => {
               <Link to={"/Shop"}>
                 <li>
                   <button
-                    className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                    data-tip="Settings"
+                    className="h-[50px] is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                    data-tip="Shop"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      strokeLinejoin="round"
-                      strokeLinecap="round"
-                      strokeWidth="2"
-                      fill="none"
-                      stroke="currentColor"
-                      className="my-1.5 inline-block size-4"
-                    >
-                      <path d="M20 7h-9"></path>
-                      <path d="M14 17H5"></path>
-                      <circle cx="17" cy="17" r="3"></circle>
-                      <circle cx="7" cy="7" r="3"></circle>
-                    </svg>
+                   <FaShop />
+                   
                     <span className="is-drawer-close:hidden">Shop</span>
                   </button>
                 </li>
               </Link>
-              <Link to={"/Profile"}>
-                <li>
-                  <button
-                    className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
-                    data-tip="Settings"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      strokeLinejoin="round"
-                      strokeLinecap="round"
-                      strokeWidth="2"
-                      fill="none"
-                      stroke="currentColor"
-                      className="my-1.5 inline-block size-4"
-                    >
-                      <path d="M20 7h-9"></path>
-                      <path d="M14 17H5"></path>
-                      <circle cx="17" cy="17" r="3"></circle>
-                      <circle cx="7" cy="7" r="3"></circle>
-                    </svg>
-                    <span className="is-drawer-close:hidden">Profile</span>
-                  </button>
-                </li>
-              </Link>
+              
             </ul>
           </div>
         </div>
